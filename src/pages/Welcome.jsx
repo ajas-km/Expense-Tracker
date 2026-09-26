@@ -26,19 +26,19 @@ export default function Welcome({ onContinue }) {
         <div className="visual-card chart-card-small float-medium"><div className="mock-donut" /><div className="mock-list"><span /><span /><span /></div></div>
       </aside>
       <section className="welcome-content" aria-labelledby="welcome-title">
-        <div className="welcome-logo"><ChartNoAxesColumnIncreasing size={31} strokeWidth={2.6} /></div>
+        <div className="welcome-logo"><ChartNoAxesColumnIncreasing size={25} strokeWidth={2.4} /></div>
         <h1 id="welcome-title">Welcome to <span>Spendly.</span></h1>
         <p className="welcome-copy">Track your expenses, understand your spending,<br />and take control of your finances.</p>
         <form className="welcome-form" onSubmit={submit} noValidate>
           <label className="sr-only" htmlFor="profile-name">What should we call you?</label>
-          <div className="welcome-name-field"><CircleUserRound size={23} /><input id="profile-name" autoFocus value={name} onChange={(event) => { setName(event.target.value); setError(''); }} placeholder="Enter your first name" maxLength="40" /></div>
+          <div className="welcome-name-field"><CircleUserRound size={20} /><input id="profile-name" autoFocus value={name} onChange={(event) => { setName(event.target.value); setError(''); }} placeholder="Enter your first name" maxLength="40" /></div>
           {error && <p className="field-error welcome-error">{error}</p>}
-          <button className="button button-primary welcome-submit" type="submit">Start tracking <ArrowRight size={21} /></button>
+          <button className="button button-primary welcome-submit" type="submit">Start tracking <ArrowRight size={18} /></button>
         </form>
       </section>
       <aside className="landing-visual visual-right" aria-hidden="true">
-        <div className="visual-card wallet-card float-medium"><div className="wallet-icon"><WalletCards size={48} /></div><span className="wallet-copy wallet-copy-one" /><span className="wallet-copy wallet-copy-two" /></div>
-        <div className="visual-card mini-report float-slow"><div className="mini-logo"><ChartNoAxesColumnIncreasing size={30} /></div><div className="mini-bars"><span /><span /><span /></div></div>
+        <div className="visual-card wallet-card float-medium"><div className="wallet-icon"><WalletCards size={38} /></div><span className="wallet-copy wallet-copy-one" /><span className="wallet-copy wallet-copy-two" /></div>
+        <div className="visual-card mini-report float-slow"><div className="mini-logo"><ChartNoAxesColumnIncreasing size={24} /></div><div className="mini-bars"><span /><span /><span /></div></div>
       </aside>
     </main>
   );
